@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="de.rhistel.gui.login.LoginController"
+      prefHeight="175.0"
+      prefWidth="420.0"
+      spacing="5"
+      alignment="BASELINE_CENTER">
+
+    <Label prefWidth="400.0" minWidth="400" fx:id="lblHeader" text="Loggen Sie sich ein:"/>
+    <Label prefWidth="400.0" minWidth="400" fx:id="lblUserName" text="Benutzername"/>
+    <TextField fx:id="txtUserName" prefWidth="400.0" minWidth="400" promptText="Benutzername"/>
+
+    <Label prefWidth="400.0" minWidth="400" fx:id="lblUserPw" text="Zungangscode:"/>
+    <PasswordField prefWidth="400.0" minWidth="400" fx:id="txtUserPw"
+                   promptText="Passwort eingeben"/>
+
+    <Button prefWidth="400.0" minWidth="400.0" fx:id="btnLogin" text="Login" onAction="#onClickLogin"/>
+
+</VBox>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_LEFT" maxHeight="800.0" maxWidth="1620.0" minHeight="800" minWidth="1620.0" prefHeight="800.0" prefWidth="1620.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.rhistel.gui.customermanagement.CustomerManagementController">
+    <children>
+        <TitledPane fx:id="tpCustomerdata" prefHeight="800.0" prefWidth="1600.0" text="Kundendaten">
+            <HBox spacing="5">
+                <VBox alignment="TOP_LEFT" prefWidth="800" spacing="5">
+                    <Label fx:id="lblAllCustomers" alignment="CENTER" minWidth="800" prefWidth="800" text="Alle Kunden" />
+                    <ListView fx:id="lvCustomers" minHeight="400" minWidth="800" prefHeight="400" prefWidth="800" />
+                </VBox>
+                <VBox alignment="BASELINE_RIGHT" minHeight="400" prefWidth="800" spacing="5">
+                    <HBox alignment="BASELINE_RIGHT" prefWidth="800" spacing="5">
+                        <ComboBox fx:id="cboPronoun" maxWidth="260.0" minWidth="260.0" prefWidth="260.0" promptText="Anrede" />
+                        <TextField fx:id="txtBday" maxWidth="260.0" minWidth="260.0" prefWidth="260.0" promptText="Geburtstag" />
+                    </HBox>
+                    <HBox alignment="BASELINE_RIGHT" prefWidth="800" spacing="5">
+
+                        <TextField fx:id="txtFirstName" maxWidth="260.0" minWidth="260.0" prefWidth="260.0" promptText="Vorname" />
+                        <TextField fx:id="txtLastName" maxWidth="260.0" minWidth="260.0" prefWidth="260.0" promptText="Nachname" />
+                    </HBox>
+
+                    <HBox alignment="BASELINE_RIGHT" prefWidth="800" spacing="5">
+                        <TextField fx:id="txtAge" maxWidth="260.0" minWidth="260.0" prefWidth="260.0" promptText="Alter" />
+
+                        <TextField fx:id="txtSex" maxWidth="260.0" minWidth="260.0" prefWidth="260.0" promptText="Geschlecht" />
+                    </HBox>
+
+                    <HBox alignment="BASELINE_RIGHT" prefWidth="800" spacing="5">
+                        <TextField fx:id="txtHeight" minWidth="260" prefWidth="260" promptText="Größe in m" />
+                        <TextField fx:id="txtWeight" minWidth="260" prefWidth="260" promptText="Gewicht in kg" />
+                    </HBox>
+                    <HBox alignment="BASELINE_RIGHT" prefWidth="800" spacing="5">
+                        <TextField fx:id="txtPhoneNr" minWidth="260" prefWidth="260" promptText="Telefonnummer" />
+                        <TextField fx:id="txtEmail" minWidth="260" prefWidth="260" promptText="Email" />
+                    </HBox>
+
+                    <Label fx:id="lblAddress" alignment="CENTER" prefWidth="800" text="Adresse:"/>
+
+
+                    <HBox alignment="BASELINE_RIGHT" prefWidth="800" spacing="5">
+                        <TextField fx:id="txtStreet" minWidth="260" prefWidth="260" promptText="Straße" />
+                        <TextField fx:id="txtHouseNr" minWidth="260" prefWidth="260" promptText="Hausnummer" />
+                    </HBox>
+
+                    <HBox alignment="BASELINE_RIGHT" prefWidth="800" spacing="5">
+                        <TextField fx:id="txtZip" minWidth="260" prefWidth="260" promptText="PLZ" />
+                        <TextField fx:id="txtCity" minWidth="260" prefWidth="260" promptText="Ort" />
+                    </HBox>
+
+                    <Button fx:id="btnSubmitCustomer" minWidth="525" prefWidth="525" onAction="#onClickSubmitCustomer" text="Kundendaten übernehemen" />
+                </VBox>
+            </HBox>
+        </TitledPane>
+    </children>
+
+</VBox>
